@@ -21,12 +21,12 @@ window.onscroll = () => {
   themeToggler.classList.remove("active");
 };
 
-// document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
-//   btn.onclick = () => {
-//     let color = btn.style.background;
-//     document.querySelector(":root").style.setProperty("--theme-color", color);
-//   };
-// });
+document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
+  btn.onclick = () => {
+    let color = btn.style.background;
+    document.querySelector(":root").style.setProperty("--theme-color2", color);
+  };
+});
 
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
