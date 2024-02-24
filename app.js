@@ -1,5 +1,21 @@
 /* Created by Tivotal */
 
+const video = document.getElementById('myVideo');
+const mainContent = document.getElementById('main-content');
+
+video.addEventListener('canplaythrough', () => {
+  // Start playing the video
+  video.play();
+});
+
+video.addEventListener('ended', () => {
+  // Remove the video element
+  video.remove();
+  
+  // Show the main content
+  mainContent.style.display = 'block';
+});
+
 let menu = document.querySelector("#menu-bars");
 let navbar = document.querySelector(".navbar");
 
@@ -96,5 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var ver = document.getElementById('ver');
   ver.innerHTML = flipdown.version;
 });
+
+
 
 

@@ -16,7 +16,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: 0.2s linear;
 }
 
@@ -33,6 +33,15 @@ body {
 
 section {
   padding: 2rem 9%;
+}
+
+#main-content {
+  display: none;
+}
+
+#myVideo {
+  width: 100%;
+  height: auto;
 }
 
 .header {
