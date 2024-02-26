@@ -198,6 +198,7 @@ section {
 
 .about .row .image img {
   width: 100%;
+  height: 100%;
   border-radius: 0.5rem;
   border: 1rem solid #333;
 }
@@ -232,7 +233,7 @@ section {
 
 .gallery .box-container .box {
   position: relative;
-  border: 1rem solid #333;
+  border: 5px solid #333;
   border-radius: 0.5rem;
   height: 25rem;
   cursor: pointer;
@@ -433,6 +434,22 @@ section {
   color: var(--theme-color);
 }
 
+#map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+#map iframe{
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+
 html::-webkit-scrollbar {
   width: 1rem;
 }
@@ -495,6 +512,14 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
   font-size: 3rem;
   animation: spin 4s linear infinite;
+}
+
+#change{
+  color: white;
+}
+
+#change:hover{
+  color: black;
 }
 
 @keyframes spin {
