@@ -5,6 +5,7 @@ const mainContent = document.getElementById('main-content');
 
 video.addEventListener('canplaythrough', () => {
   // Start playing the video
+  // video.currentTime = 2
   video.play();
 });
 
@@ -49,6 +50,7 @@ var swiper = new Swiper(".home-slider", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  
   coverflowEffect: {
     rotate: 0,
     stretch: 0,

@@ -40,8 +40,8 @@ section {
 }
 
 #myVideo {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header {
@@ -581,9 +581,53 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   html {
     font-size: 50%;
+  } */
+  /* @media (max-width: 450px) {
+    .header .navbar {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border-top: 0.1rem solid #222;
+      background: #333;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    .header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  
+    .header .navbar a {
+      display: block;
+      background: #222;
+      border-radius: 0.5rem;
+      padding: 1.3rem;
+      margin: 0.5rem;
+      font-size: 2rem;
+    }
+  }
+   */
+   @media (max-width: 450px) {
+    html,
+    body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
+    }
+  
+    .home .home-slider .swiper-slide {
+      width: 27rem;
+    }
+  
+    .contact form .inputBox input {
+      width: 100%;
+    }
   }
 
   .home .home-slider .swiper-slide {
@@ -593,4 +637,4 @@ html::-webkit-scrollbar-thumb {
   .contact form .inputBox input {
     width: 100%;
   }
-}
+
